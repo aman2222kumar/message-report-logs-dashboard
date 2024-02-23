@@ -1,0 +1,52 @@
+.chartContainer {
+    display: flex;
+   
+    gap: 2rem; /* Reduced the gap between cards */
+    
+   .donutCard{
+    border-radius: 15px;
+    .donutChart{
+        position: relative;
+        left: -7rem;
+       
+    }
+   }
+    
+   
+    .boundInfoCard{
+        border-radius: 15px;
+        .boundInfo {
+            width: 500px;
+          border-radius: 10px;
+          display: flex;
+          gap: 3rem;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(230, 229, 229);
+          color: black;
+          padding: 1rem;
+          .colData {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .boundText{
+                    text-align: center;
+                   position: relative;
+                   top:1rem;
+                   font-weight: bold;
+                  
+            }
+          }
+        }
+      
+        .titleBound {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5rem;
+          width: 500px;
+        }
+    }
+  }

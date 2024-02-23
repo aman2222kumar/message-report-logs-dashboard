@@ -1,0 +1,137 @@
+.parentContainerOfMessageLog {
+    .containerOfRangeAndSelect {
+        display: flex;
+        align-items: center;
+        margin-top: -3rem;
+        gap: 1rem;
+        .rangePickerContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .rangeStyleChanger {
+                background-color: #dddddd;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        }
+        .selectMenuContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .selectMenuStyleChanger {
+                width: 350px;
+                :global {
+                    .ant-select-selector {
+                        background-color: #dddddd !important;
+                        height: 3.1rem !important;
+                        border-radius: 5px;
+                    }
+                    .ant-select-selection-item {
+                        padding-left: 0.5rem;
+                        margin-left: 0.8rem;
+                        height: 1.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+    .chartAndInformationContainer {
+        margin-top: 2.5rem;
+        .spinner {
+            position: relative;
+            top: 2.5rem;
+        }
+    }
+    .tableContainer {
+        margin-top: 4rem;
+        width: 100%;
+        .messageTableScroll {
+            overflow-x: auto;
+            border-radius: 5px;
+            :global {
+                .ant-card-body {
+                    padding: 0px;
+
+                    .ant-table-cell {
+                        background-color: rgba(255, 255, 255, 0);
+                        border-top: 1px solid #dddddd;
+                        width: max-content;
+
+                        span {
+                            display: inline-block;
+                            width: max-content;
+                        }
+                        p {
+                            width: max-content;
+                            margin-bottom: 0em;
+                        }
+                    }
+                }
+                .ant-pagination-total-text {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+        .parentContainerOfStatusColumn {
+            display: flex;
+            gap: 1rem;
+
+            height: 2rem;
+            .greenColor {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: rgb(2, 201, 2);
+                align-self: flex-start;
+            }
+            .brownColor {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #dddddd;
+                align-self: flex-start;
+            }
+            .redColor {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: rgb(249, 22, 22);
+                align-self: flex-start;
+            }
+            .skyBlueColor {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: rgb(27, 226, 226);
+                align-self: flex-start;
+            }
+            .yellowColor {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: rgb(239, 239, 10);
+                align-self: flex-start;
+            }
+            .statusColumn::first-letter {
+                text-transform: uppercase;
+            }
+            .statusColumn {
+                text-transform: lowercase;
+            }
+        }
+
+        .mediaUrl {
+            text-decoration: none;
+            :hover {
+                color: blue;
+            }
+        }
+    }
+}
